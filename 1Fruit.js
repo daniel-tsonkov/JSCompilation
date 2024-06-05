@@ -1,3 +1,3 @@
-function fruit() {
+function fruit(fruitName, weightInGrams) {
     asda
 }
