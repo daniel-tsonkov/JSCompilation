@@ -2,14 +2,21 @@ function solve(arr) {
     let newArr = [];
     let biggestNum = 0;
 
-    for (let index = 0; index < arr.length; index++) {
-        let element = arr[index]; 
+    // for (let index = 0; index < arr.length; index++) {
+    //     let element = arr[index]; 
 
+    //     if (biggestNum <= element) {
+    //         newArr.push(element)
+    //         biggestNum = element;
+    //     }
+    // }
+
+    arr.forEach(element => {
         if (biggestNum <= element) {
             newArr.push(element)
             biggestNum = element;
         }
-    }
+    });
 
     console.log(newArr);
 }
