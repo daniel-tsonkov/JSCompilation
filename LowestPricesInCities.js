@@ -11,7 +11,7 @@ function solve(arr) {
         if(!obj[product]) {
             obj[product] = {town, price};
         } else {
-            if(price <= obj[product].price) {
+            if(price < obj[product].price) {
                 obj[product] = {town, price};
             }
         }
