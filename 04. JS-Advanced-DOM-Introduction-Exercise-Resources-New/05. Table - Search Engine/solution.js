@@ -4,7 +4,6 @@ function solve() {
    let rows = document.querySelectorAll('tbody tr');
    let input = document.getElementById('searchField');
 
-
    function onClick() {
       for (let row of rows) {
          row.classList.remove('select');
@@ -16,7 +15,6 @@ function solve() {
    }
 
    input.addEventListener('input', function(event) {
-      //console.log('Input event detected!');
       //console.log('Current value:', event.target.value);
       //console.log('Current value:', input.value.length); 
       
