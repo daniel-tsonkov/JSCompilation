@@ -16,20 +16,13 @@ function solve() {
 
    input.addEventListener('input', function(event) {
       //console.log('Current value:', event.target.value);
-      //console.log('Current value:', input.value.length); 
       
       for (let row of rows) {
          row.classList.remove('select');
 
-         if (row.innerHTML.includes(input.value)) {
+         if ((row.innerHTML.includes(input.value)) && (input.value.length != 0)) {
             row.className = 'select';
          }
-      }
-
-      if(input.value.length == 0){
-         for (let row of rows) {
-            row.classList.remove('select');
-         } 
       }
   });
 }
